@@ -38,22 +38,5 @@ sudo systemctl start mysql
 
 ### Step 6: Enter the MySQL Shell
 ```bash
-mysql -u root
+mysql -u root -p
 ```
-
-### Step 7: Run the Reset Commands
-```sql
-FLUSH PRIVILEGES;
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword123';
-FLUSH PRIVILEGES;
-EXIT;
-```
-
-### Step 8: Kill the Safe Process & Restart
-```bash
-sudo pkill mysqld
-sudo systemctl start mysql
-```
-
-
-
