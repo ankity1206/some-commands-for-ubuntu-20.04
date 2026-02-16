@@ -1,4 +1,4 @@
-## Command to reset root password
+## Command to reset SQL root user password(in case forgot)
 
 ### Step 1: Stop the Database
 ```bash
