@@ -22,7 +22,7 @@ Connect:
 mysql -u root
 ```
 Reset: Inside the MySQL prompt, run
-```bash
+```sql
 FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword123';
 FLUSH PRIVILEGES;
@@ -42,7 +42,7 @@ mysql -u root
 ```
 
 ### Step 7: Run the Reset Commands
-```bash
+```sql
 FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword123';
 FLUSH PRIVILEGES;
