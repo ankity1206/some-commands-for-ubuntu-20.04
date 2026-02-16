@@ -1,6 +1,6 @@
 ## Command to reset SQL root user password(in case forgot)
 
-### Step 1: Stop the Database
+### Step 1: Stop mysql
 ```bash
 sudo systemctl stop mysql
 ```
