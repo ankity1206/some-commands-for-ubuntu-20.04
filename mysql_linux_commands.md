@@ -18,7 +18,8 @@ sudo mysqld_safe --skip-grant-tables --skip-networking &
 
 ### Step 4:Log in and Reset Password 
 Connect: 
-```bash mysql -u root
+```bash
+mysql -u root
 ```
 Reset: Inside the MySQL prompt, run
 ```bash
