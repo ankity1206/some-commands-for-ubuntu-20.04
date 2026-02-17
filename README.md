@@ -23,12 +23,12 @@ Reload the settings (Crucial):
 ```bash
 source ~/.bashrc
 ```
-[!Note]
-You might have to update the windows nvidia drivers:
-Go to nvidia download page
-select your gpu, sytem config
-Download and install latest driver
-Shutdown wsl
+> [!Note]
+> You might have to update the windows nvidia drivers:
+> Go to nvidia download page
+> select your gpu, sytem config
+> Download and install latest driver
+> Shutdown wsl
 Now try running cuda codes.
 
 ## How to increase swap memory:
