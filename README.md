@@ -11,6 +11,18 @@ sudo cp /var/cuda-repo-wsl-ubuntu-13-1-local/cuda-*-keyring.gpg /usr/share/keyri
 sudo apt-get update
 sudo apt-get -y install cuda-toolkit-13-1
 ```
+To add nvcc to path
+Open: ```bash nano ~/.bashrc```
+paste:
+```bash
+export PATH=/usr/local/cuda-13.1/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-13.1/lib64:$LD_LIBRARY_PATH
+```
+Save and Exit: Press Ctrl+O, then Enter, then Ctrl+X.
+Reload the settings (Crucial):
+```bash
+source ~/.bashrc
+```
 
 ## How to increase swap memory:
 Source[https://arcolinux.com/how-to-increase-the-size-of-your-swapfile/]  
