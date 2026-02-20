@@ -31,7 +31,7 @@ source ~/.bashrc
 > Shutdown wsl
 Now try running cuda codes.
 
-### To build the CUDA samples specifically for your 8.9 architecture (Ada Lovelace) and save significant disk space, follow these exact commands in your terminal. 
+### To build the CUDA samples specifically for 8.9 architecture (Ada Lovelace) and save significant disk space, follow these exact commands in your terminal. 
 #### 1. Clone the Repository 
 First, grab the latest source code from the official NVIDIA CUDA Samples GitHub: 
 ```bash
