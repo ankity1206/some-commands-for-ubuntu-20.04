@@ -42,7 +42,7 @@ cd cuda-samples
 This step is critical for minimizing size. By specifying Ada (the name for architecture 8.9), the compiler will skip generating code for older, unnecessary architectures: 
 ```bash
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCUDA_ARCH_NAME=Ada ..
+cmake -DCMAKE_BUILD_TYPE=Release -DSMS="89" ..
 ```
 #### 3. Build the Samples
 Run the build using all available CPU cores to speed up the process: 
