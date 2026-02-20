@@ -31,6 +31,30 @@ source ~/.bashrc
 > Shutdown wsl
 Now try running cuda codes.
 
+### To build the CUDA samples specifically for your 8.9 architecture (Ada Lovelace) and save significant disk space, follow these exact commands in your terminal. 
+#### 1. Clone the Repository 
+First, grab the latest source code from the official NVIDIA CUDA Samples GitHub: 
+```bash
+git clone https://github.com/NVIDIA/cuda-samples.git
+cd cuda-samples
+```
+#### 2. Configure with CMake (GPU-Specific) 
+This step is critical for minimizing size. By specifying Ada (the name for architecture 8.9), the compiler will skip generating code for older, unnecessary architectures: 
+```bash
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DCUDA_ARCH_NAME=Ada ..
+```
+#### 3. Build the Samples
+Run the build using all available CPU cores to speed up the process: 
+```bash
+make -j$(nproc)
+```
+#### 4. Verify Your Build
+Once complete, you can find the executable files in the bin directory or within each sample's subfolder in the build directory. Run this to confirm it detects your GPU correctly: 
+```bash
+./Samples/0_Introduction/deviceQuery/deviceQuery
+```
+
 ## How to increase swap memory:
 Source[https://arcolinux.com/how-to-increase-the-size-of-your-swapfile/]  
 
