@@ -1,6 +1,6 @@
 # some-commands-for-ubuntu-20.04
 
-## install cuda-toolkit in wsl-2 ubuntu
+## Install cuda-toolkit in wsl-2 ubuntu
 Source[https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local]
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
